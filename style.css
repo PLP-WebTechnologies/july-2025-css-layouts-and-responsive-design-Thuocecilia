@@ -1,0 +1,131 @@
+body {
+  margin-left: 250px; 
+}
+/*use of media query*/
+@media (max-width: 768px) {
+  body {
+    margin-left: 180px; 
+  }
+  .container {
+    grid-template-columns: 1fr; 
+  }
+  .sidebar {
+    width: 180px;
+  }
+  header {
+    font-size: 28px;
+  }
+}
+
+/* styling sidebar */
+.sidebar{
+  position: fixed;       
+  top: 0px;                
+  left: 0px;               
+  height: 100vh;         
+  width: 250px;           
+  background-color: #6212d3;
+  color: white;          
+  padding: 10px;         
+  display: inline-block;   
+  text-decoration: none;
+
+}
+h1{
+    font-size: 30px;
+    color: rgb(233, 145, 30);
+}
+h3{
+    text-decoration: underline;
+    color:rgb(243, 140, 6);
+}
+h5{
+    font-size: 25px;
+    color: rgb(237, 137, 7);
+    margin-bottom: 0px;
+}
+.content{
+    margin-top: 0px;
+    color: red;
+    font-size: 20px;
+}
+.sidebar p {
+  font-weight: bold;
+  font-size: 18px;
+  color: greenyellow;
+  margin: 10px 0 5px;
+}
+
+/*Feature list*/
+.features {
+  list-style: square;
+  padding-left: 25px;
+  margin: 0;
+  font-size: 16px;
+  color: gold;
+}
+
+.features li {
+  margin: 4px 0;
+}
+
+header{
+    justify-content:center ;
+    color: blue;
+    font-size: 40px;
+    text-align: center;
+}
+/*home button */
+#button ul{
+    
+    display: flex;              
+  justify-content: flex-end; 
+  list-style: none;
+  
+}
+#home{
+    background-color: aqua;
+    border-radius: 10px;
+    padding:15px  ;
+    width: 60px;
+    height: 10px;
+    padding-left: 35px;
+    padding-top:10px;
+    font-weight: bold;
+    color: rgb(214, 127, 14);
+}
+
+#home:hover{
+    color:aqua ;
+    background-color: rgb(214, 127, 14);
+
+}
+/*use of grid*/
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 15px;
+  max-width: 450px; 
+  margin: 0 auto;   
+}
+
+.container img {
+  width: 100%;
+  aspect-ratio: 1 / 1;   
+  object-fit: cover;     
+  border-radius: 8px;
+  display: block;
+}
+/*footer style*/
+footer {
+  
+  color: rgb(0,0,0) ;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
